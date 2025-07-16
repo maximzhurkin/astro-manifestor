@@ -1,0 +1,10 @@
+node_modules/
+dist/
+!tests/fixtures/dist/
+*.log
+npm-debug.log*
+.DS_Store
+.idea/
+.vscode/
+.tmp/
+*.tsbuildinfo

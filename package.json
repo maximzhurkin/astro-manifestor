@@ -1,0 +1,53 @@
+{
+  "name": "astro-manifestor",
+  "version": "1.0.0",
+  "description": "Extracts JS, CSS, and Astro islands from built HTML into manifest.json",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "astro-manifestor": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.ru.md"
+  ],
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/cli.ts",
+    "build": "tsup",
+    "test": "vitest --watch=false -t unit",
+    "test:integration": "npm run build && vitest --watch=false -t integration"
+  },
+  "keywords": [
+    "astro",
+    "manifest",
+    "ssr",
+    "islands"
+  ],
+  "author": "Max Zhurkin",
+  "license": "MIT",
+  "dependencies": {
+    "cac": "^6.7.14",
+    "cheerio": "^1.1.0",
+    "glob": "^11.0.3",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/glob": "^8.1.0",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^24.0.13",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

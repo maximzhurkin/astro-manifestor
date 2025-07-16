@@ -36,7 +36,7 @@ export async function astroManifestor(config: Config) {
     console.log(`[astro-manifestor] ✅ Manifest written to ${config.manifestOutFile}`);
   }
 
-  return manifestData;
+  return finalManifest;
 }
 
 export type * from './types';

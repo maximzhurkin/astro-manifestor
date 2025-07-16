@@ -38,3 +38,5 @@ export async function astroManifestor(config: Config) {
 
   return manifestData;
 }
+
+export type * from './types';

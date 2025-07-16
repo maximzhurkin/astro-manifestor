@@ -1,6 +1,6 @@
 {
   "name": "astro-manifestor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extracts JS, CSS, and Astro islands from built HTML into manifest.json",
   "type": "module",
   "main": "./dist/index.js",

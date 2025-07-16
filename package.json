@@ -31,6 +31,14 @@
     "ssr",
     "islands"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maximzhurkin/astro-manifestor"
+  },
+  "homepage": "https://github.com/maximzhurkin/astro-manifestor#readme",
+  "bugs": {
+    "url": "https://github.com/maximzhurkin/astro-manifestor/issues"
+  },
   "author": "Max Zhurkin",
   "license": "MIT",
   "dependencies": {

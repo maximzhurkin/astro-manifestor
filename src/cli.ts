@@ -18,14 +18,6 @@ cli
 cli.help();
 
 cli.command('').action(async (cliOptions) => {
-  console.log('[CLI] parsed options:', cliOptions);
-
-  const con = await loadConfig(cliOptions);
-  console.log('[CLI] resolved config:', con);
-
-  await astroManifestor(con);
-  console.log('[CLI] done');
-
   const config = await loadConfig(cliOptions);
   await astroManifestor(config);
 });

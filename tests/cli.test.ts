@@ -48,7 +48,6 @@ describe('integration: CLI integration', () => {
     expect(stdout).toContain('[astro-manifestor] Processing dist/index.html');
     expect(stdout).toContain('[astro-manifestor] Processing dist/about/index.html');
     expect(stdout).toContain('Manifest written to');
-    expect(stdout).toContain('[CLI] done');
 
     expect(fs.existsSync(manifestOutFile)).toBe(true);
     const manifestContent = fs.readFileSync(manifestOutFile, 'utf8');
